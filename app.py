@@ -18,3 +18,6 @@ def add_inputs():
     add.delay(x, y)
     flash("Your addition job has been submitted.")
     return redirect('/')
+
+if __name__ == "__main__":
+    app.run("localhost", 4000, True)
